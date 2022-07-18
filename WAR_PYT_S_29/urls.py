@@ -22,5 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
     path('2/', views.index2),
-    path('przedstaw/', views.przedstaw)
+    path('przedstaw/', views.przedstaw),
+    path('przedstawsie/<str:imie>/<str:nazwisko>/', views.przedsawsie),
+    path('tabliczka/<int:a>/<int:b>/', views.tabliczka),
+    path('tabliczka_render/<int:a>/<int:b>/', views.tabliczka_render)
 ]
