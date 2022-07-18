@@ -25,5 +25,11 @@ urlpatterns = [
     path('przedstaw/', views.przedstaw),
     path('przedstawsie/<str:imie>/<str:nazwisko>/', views.przedsawsie),
     path('tabliczka/<int:a>/<int:b>/', views.tabliczka),
-    path('tabliczka_render/<int:a>/<int:b>/', views.tabliczka_render)
+    path('tabliczka_render/<int:a>/<int:b>/', views.tabliczka_render),
+    path('oblicz/<int:a>+<int:b>/', views.dodaj),
+    path('oblicz/<int:a>-<int:b>/', views.odejmij),
+    path('metoda/', views.metoda),
+    path('przywitanie/', views.przywitanie),
+    path('losuj/', views.losuj2),
+
 ]

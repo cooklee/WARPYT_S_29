@@ -1,0 +1,17 @@
+<form method="post">
+    {% csrf_token %}
+    <input type="number" name="n" placeholder="ilosc">
+    <input type="number" name="min" placeholder="min">
+    <input type="number" name="max" placeholder="max">
+    <input type="submit">
+</form>
+{% if liczby %}
+    wyloswane liczby:
+{% endif %}
+<ul>
+    {% for i in liczby %}
+        <li>{{ i }}</li>
+        {% empty %}
+        <li>DUPAs</li>
+    {% endfor %}
+</ul>
