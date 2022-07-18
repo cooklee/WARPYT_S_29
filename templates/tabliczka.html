@@ -1,8 +1,17 @@
-<table >
+<table border="1">
+    <tr>
+    <th></th>
+        {% for x in tab.0 %}
+            <th>
+                {{ x }}
+            </th>
+        {% endfor %}
+    </tr>
     {% for line in tab %}
         <tr>
+        <th>{{ line.0 }}</th>
             {% for x in line %}
-                <td style="border: solid 1px blanchedalmond">{{ x }}</td>
+                <td>{{ x }}</td>
             {% endfor %}
         </tr>
     {% endfor %}
